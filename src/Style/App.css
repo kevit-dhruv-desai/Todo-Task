@@ -1,0 +1,61 @@
+.searchConatiner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px;
+}
+.inputSearch {
+  outline: none;
+  width: 15vw;
+  height: 4vh;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.inputSearch:hover {
+  border: 1px solid black;
+}
+.btn {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(49, 49, 51);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.submitbtn:active {
+  background-color: rgba(49, 49, 51, 0.772);
+}
+.listConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.listConatiner li {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+  margin-bottom: 10px;
+}
+
+.checkedItem {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkedItem li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.checkedItem h2 {
+  margin-bottom: 10px;
+}
