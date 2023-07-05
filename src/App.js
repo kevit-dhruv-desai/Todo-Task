@@ -5,6 +5,8 @@ function App() {
   const [item, setItem] = useState("");
   const [todo, setTodo] = useState([]);
   const [completedItems, setCompletedItems] = useState([]);
+  
+  
 
   const inputChange = (event) => {
     setItem(event.target.value);
@@ -54,6 +56,7 @@ function App() {
             <li key={index}>
               <input
                 type="checkbox"
+                checked={todo.includes(item)}
                 onChange={() => handleCheckboxChange(index)}
               />
               <h3>{listItems}</h3>
@@ -67,11 +70,10 @@ function App() {
       {completedItems.length > 0 && <hr />}
       <div className="checkedItem">
         <ul>
-          <h2>Listed Item</h2>
           {completedItems.map((completedItem, index) => (
             <li key={index}>
               <input type="checkbox" checked={true} />
-              <h3>{completedItem}</h3>
+              <h3><s>{completedItem}</s></h3>
             </li>
           ))}
         </ul>
